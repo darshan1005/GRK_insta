@@ -1,7 +1,7 @@
 // import the font from Google font --> https: //fonts.google.com/specimen/Montserrat?query=ma
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&display=swap');
 
-:root{ 
+:root {
     --header-height: 3rem;
     --whitColor: white;
     --btnprimaryColor: rgb(57, 57, 250);
@@ -14,15 +14,15 @@
     --textHover: rgba(0, 0, 0);
     --transition: .4s ease-in-out;
     --decoration: text-decoration: none;
-    --transform: transform: scale(1) ;
+    --transform: transform: scale(1);
 
     // colors
     // color mode HSl(hue, saturation, lightness)
     --hue: 0;
     --saturation: 0%;
-    --title-color: hsl(var(--hue),var(var(--saturation)),20%);
+    --title-color: hsl(var(--hue), var(var(--saturation)), 20%);
     --title-color-dark: hsl(var(--hue), var(var(--saturation)), 0%);
-    --textColor: hsl(var(--hue),var(--saturation),46%);
+    --textColor: hsl(var(--hue), var(--saturation), 46%);
     --container-color: #fff;
 
     // font and typography
@@ -42,9 +42,9 @@
     --semi-bold: 600;
 
     // margins
-    --margin-xSmall : calc(.25 * rem);
-    --margin-small   : calc(.5 * rem);
-    --margin        : calc(1* rem);
+    --margin-xSmall: calc(.25 * rem);
+    --margin-small: calc(.5 * rem);
+    --margin: calc(1* rem);
     // margin 25, 50, 75
     --mb--0-25: 0.25rem 0.25rem;
     --mb-0-50: .5rem .5rem;
@@ -54,7 +54,7 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-    
+
     // Z index
     --z-fixed: 100;
     --z-tooltip: 10;
@@ -81,57 +81,57 @@
     font-size: 'Spartan', sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: var(--whitColor);
     background-image: url(http://www.transparenttextures.com/patterns/climpek.png);
     color: var(--textColor);
 }
 
-a{
+a {
     text-decoration: var(--decoration);
     color: var(--title-color-dark);
 }
 
 button,
 input,
-textarea{
+textarea {
     font-size: var(--normal-font-size);
 }
 
 h1,
 h2,
-h3{
+h3 {
     color: var(--title-color);
     font-weight: var(--semi-bold);
 }
 
-button{
+button {
     cursor: pointer;
     border: none;
     outline: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
 // reasualbe classes
-.middel{
+.middel {
     left: auto;
     right: auto;
     margin: 0 auto;
 }
 
-.section{
+.section {
     padding: 4rem 0 2rem;
 }
 
-.section-title{
+.section-title {
     font-size: var(--h3-font-size);
     color: var(--title-color);
     text-align: center;
@@ -139,41 +139,42 @@ img{
 
 // layout
 
-.conatainer{
+.conatainer {
     max-width: 100%;
     padding: 1rem 3rem 1rem;
     margin: 0 auto 0;
 }
 
-.grid{
+.grid {
     display: grid;
     gap: 1.5rem;
 }
 
-.button{
-    background-image: linear-gradient(to bottom,#4987e8 ,#a2bffe );
+.button {
+    background-image: linear-gradient(to bottom, #4987e8, #a2bffe);
     color: var(--title-color-dark);
     border-radius: var(--borderRadius);
     font-weight: var(--medium);
     padding: 1.25rem 2rem;
 }
 
-button:hover{
+button:hover {
     background-color: (var(--title-color));
     transition: var(--transition);
 }
 
 // GRK
 
-.profile{
-    .section-title{
+.profile {
+    .section-title {
         display: block;
         margin: auto;
         border-bottom: dashed;
         width: 40%;
         padding: 2rem;
         margin-bottom: 2rem;
-        border-color: rgba(190, 190, 190,.5);
+        border-color: rgba(190, 190, 190, .5);
+
         .profile_dp {
             width: 100%;
             max-width: 200px;
@@ -182,6 +183,7 @@ button:hover{
             box-shadow: var(--boxshadow);
             border: 1px solid rgb(89, 89, 89, .3);
         }
+
         .title {
             font-size: var(--medium-font-size);
             color: black;
@@ -189,127 +191,129 @@ button:hover{
             cursor: pointer;
             margin: var(--mb--0-25);
 
-            }
-        .section_subtitle{
+        }
+
+        .section_subtitle {
             color: var(--HoverColor);
 
-            &:hover{
+            &:hover {
                 color: var(--btnprimaryColor);
             }
-            &::selection{
+
+            &::selection {
                 color: red;
                 background: yellow;
             }
-           } 
-        }
-
-        /* Responsive styles */
-        @media screen and (max-width: 350px) {
-            .profile_dp {
-                max-width: 200px;
-                width: 100%;
-            }
-    
-            .title {
-                font-size: 1.2em;
-            }
-    
-            .section_subtitle {
-                font-size: 0.85em;
-                margin-left: -2.55rem;
-            }
         }
     }
 
-    // search input
-    .search{
-        border: 1px solid black;
-        padding: 0.30rem;
-        border-radius: 5px;
+    /* Responsive styles */
+    @media screen and (max-width: 350px) {
+        .profile_dp {
+            max-width: 200px;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 1.2em;
+        }
+
+        .section_subtitle {
+            font-size: 0.85em;
+            margin-left: -2.55rem;
+        }
+    }
+}
+
+// search input
+.search {
+    padding: 0.30rem;
+    border-radius: 5px;
+    background: transparent;
+    width: 300px;
+    z-index: var(--z-tooltip);
+}
+
+// card section
+.card_div {
+    padding: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 1rem;
+
+    .card {
+        box-sizing: border-box;
+        box-shadow: var(--boxshadow);
+        border-radius: 10px;
+        position: relative;
+        width: 200px;
+        height: 200px;
         background: white;
-        z-index: var(--z-tooltip);
+        margin-bottom: 5rem;
 
-    }
-
-    // card section
-    .card_div{
-        padding: 10rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        column-gap: 1rem;
-        .card {
-            box-sizing: border-box;
-            box-shadow: var(--boxshadow);
+        img {
+            width: 100%;
+            height: 100%;
             border-radius: 10px;
-            position: relative;
-            width: 200px;
-            height: 200px;
-            background: white;
-            margin-bottom: 5rem;
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                transition: .3s;
+            transition: .3s;
 
-                object-fit: cover;
-                 &:hover{
-                    box-shadow: 5px 5px 12px rgba(0, 0, 0, .5);
-                }
+            object-fit: cover;
 
+            &:hover {
+                box-shadow: 5px 5px 12px rgba(0, 0, 0, .5);
             }
-                
-            .copy_text{
-                width: 100%;
-                padding:.55rem ;
-                margin-top: 0.25rem;
-                border: 2px solid blue;
-                border-radius: 10px;
-                background: #4987e8;
-                font-size: var(--small-font-size);
-                text-align: center;
-                cursor: pointer;
-                transition: .4s;
-                color: white;
-                font-weight: var(--medium);
-             &:hover{
+
+        }
+
+        .copy_text {
+            width: 100%;
+            padding: .55rem;
+            margin-top: 0.25rem;
+            border: 2px solid blue;
+            border-radius: 10px;
+            background: #4987e8;
+            font-size: var(--small-font-size);
+            text-align: center;
+            cursor: pointer;
+            transition: .4s;
+            color: white;
+            font-weight: var(--medium);
+
+            &:hover {
                 background: rgba(183, 218, 255, 0.791);
                 color: black;
                 font-weight: var(--semi-bold);
-             }
             }
         }
+    }
 
-        @media  screen and (max-width: 350px) {
-            .card_div{
-               left: auto;
-               right: inherit;
-               margin: 0 auto;
-            }
+    @media screen and (max-width: 350px) {
+        .card_div {
+            left: auto;
+            right: inherit;
+            margin: 0 auto;
         }
-    } 
+    }
+}
 
-    // floating button
-        .floating-button a {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px;
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 20px;
-            opacity: 0.8;
-            transition: opacity 0.3s ease-in-out;
-            &:hover{
-                opacity: 1;
-            }
-        }
+// floating button
+.floating-button a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease-in-out;
 
-
-
-
+    &:hover {
+        opacity: 1;
+    }
+}
