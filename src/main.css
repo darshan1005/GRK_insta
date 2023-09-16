@@ -12,12 +12,12 @@
   --textHover: rgba(0, 0, 0);
   --transition: .4s ease-in-out;
   --decoration: text-decoration: none;
-  --transform: transform: scale(1) ;
+  --transform: transform: scale(1);
   --hue: 0;
   --saturation: 0%;
-  --title-color: hsl(var(--hue),var(var(--saturation)),20%);
+  --title-color: hsl(var(--hue), var(var(--saturation)), 20%);
   --title-color-dark: hsl(var(--hue), var(var(--saturation)), 0%);
-  --textColor: hsl(var(--hue),var(--saturation),46%);
+  --textColor: hsl(var(--hue), var(--saturation), 46%);
   --container-color: #fff;
   --big-font: 3.5rem;
   --h1-font-size: 2.25rem;
@@ -198,10 +198,10 @@ button:hover {
 }
 
 .search {
-  border: 1px solid black;
   padding: 0.3rem;
   border-radius: 5px;
-  background: white;
+  background: transparent;
+  width: 300px;
   z-index: var(--z-tooltip);
 }
 
