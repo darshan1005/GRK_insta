@@ -206,7 +206,7 @@ button:hover {
 }
 
 .card_div {
-  padding: 10rem;
+  padding: 5rem;
   display: grid;
   margin : 0 auto;
   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
