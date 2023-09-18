@@ -259,9 +259,9 @@ button:hover {
 }
 @media screen and (max-width: 350px) {
   .card_div .card_div {
-    left: auto;
-    right: inherit;
-    margin: 0 auto;
+    display: block;
+    flex: 1;
+    margin: auto;
   }
 }
 
