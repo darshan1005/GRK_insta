@@ -260,8 +260,12 @@ button:hover {
 @media screen and (max-width: 350px) {
   .card_div .card_div {
     display: block;
-    flex: 1;
-    margin: auto;
+    margin: 2rem auto;
+    width: 80%;
+    height: inherit;
+  }
+  .card_div .card_div .copy_text {
+    width: 100%;
   }
 }
 
