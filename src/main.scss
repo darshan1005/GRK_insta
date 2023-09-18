@@ -262,7 +262,6 @@ button:hover {
             height: 100%;
             border-radius: 10px;
             transition: .3s;
-
             object-fit: cover;
 
             &:hover {
@@ -295,9 +294,9 @@ button:hover {
 
     @media screen and (max-width: 350px) {
         .card_div {
-            left: auto;
-            right: inherit;
-            margin: 0 auto;
+            display: block;
+            flex: 1;
+            margin: auto;
         }
     }
 }
