@@ -236,11 +236,16 @@ button:hover {
 
 // card section
 .card_div {
-    padding: 5rem 10rem 5rem 10rem;
+    padding: 5rem;
     display: grid;
-    margin : 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     column-gap: 1rem;
+    justify-self: baseline;
+
+    .cards_align{
+        justify-self: center;
+        align-self: center;
+    }
 
     .card {
         box-sizing: border-box;
