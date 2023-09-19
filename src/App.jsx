@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { React, useEffect, useState } from "react";
+// imort css
 import './main.css'
 // import profile image
 import profile from './assets/male1.jpg'
