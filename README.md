@@ -1,7 +1,8 @@
 # Netlify link
-  https://grkfashion.netlify.app
+# https://grkfashion.netlify.app
 
 # Output image occupies Here 
+# ![image](https://github.com/darshan1005/GRK_insta/assets/114302987/228c3e1b-85c8-4edf-94a9-383ac57add79)
 
 # React + Vite
 
