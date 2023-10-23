@@ -1,7 +1,7 @@
 # Netlify link
   https://grkfashion.netlify.app
 
-#Output image occupies Here 
+# Output image occupies Here 
 
 # React + Vite
 
