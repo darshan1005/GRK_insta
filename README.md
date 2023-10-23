@@ -1,6 +1,6 @@
 # Netlify link
 # https://grkfashion.netlify.app
-
+### This project is a marketing based project where user can search for there product copy link or visite the site to purchase there products.
 # Output image occupies Here 
 # ![image](https://github.com/darshan1005/GRK_insta/assets/114302987/228c3e1b-85c8-4edf-94a9-383ac57add79)
 
